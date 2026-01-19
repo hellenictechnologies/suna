@@ -300,7 +300,7 @@ async def log_requests_middleware(request: Request, call_next):
         raise
 
 # Define allowed origins based on environment
-allowed_origins = ["https://www.kortix.com", "https://kortix.com", "https://prod-test.kortix.com"]
+allowed_origins = ["https://www.kortix.com", "https://kortix.com", "https://prod-test.kortix.com", "https://sun.wpdev247.com", "https://sunadmin.wpdev247.com"]
 allow_origin_regex = None
 
 # Add staging-specific origins
@@ -631,5 +631,10 @@ if __name__ == "__main__":
         port=8000,
         workers=workers,
         loop="asyncio",
+<<<<<<< HEAD
         reload=False if is_dev_env else False
     )
+=======
+        reload=True if is_dev_env else False
+    )
+>>>>>>> a60ce677b (Add changes in order to run to the suna machine)
