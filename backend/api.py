@@ -334,9 +334,11 @@ allowed_origins = [
     "https://dev.kortix.com",
     "https://staging.kortix.com",
     "https://prod-test.kortix.com",
+    "https://sun.wpdev247.com", 
+    "https://sunadmin.wpdev247.com"
 ]
-# Allow all *.kortix.com subdomains and Vercel preview deployments
-allow_origin_regex = r"https://([a-z0-9-]+\.)?kortix\.com|https://.*-kortixai\.vercel\.app"
+# Allow everything # Allow all *.kortix.com subdomains and Vercel preview deployments
+allow_origin_regex = None
 
 # Add local origins for development
 if config.ENV_MODE == EnvMode.LOCAL:
