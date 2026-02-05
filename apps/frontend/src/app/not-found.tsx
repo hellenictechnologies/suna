@@ -15,8 +15,7 @@ export default function NotFound() {
         <AnimatedBg variant="hero" />
 
         <div className="relative z-10 w-full max-w-[456px] flex flex-col items-center gap-5 sm:gap-8">
-          {/* Logo - 32px height */}
-          <KortixLogo size={28} className="sm:w-8 sm:h-8" />
+          <KortixLogo size={120} className="sm:w-8 sm:h-8" />
 
           {/* Title - responsive */}
           <h1 className="text-3xl sm:text-[43px] font-normal tracking-tight text-foreground leading-tight text-center">

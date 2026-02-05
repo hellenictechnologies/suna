@@ -13,24 +13,34 @@ export function SimpleFooter() {
 
   return (
     <footer className="w-full bg-background/50 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
-        {/* Main footer content */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {/* Brand column */}
           <div className="col-span-2 md:col-span-1 space-y-4">
             <Link href="/" className="inline-flex items-center gap-2 group">
-              {/* Wordmark on mobile, symbol on desktop */}
               <span className="md:hidden">
-                <KortixLogo size={18} variant="logomark" />
+                <img
+                  src="/logo-hellenic-ai.svg"
+                  alt="Hellenic AI"
+                  className="h-auto w-122px"
+                  suppressHydrationWarning
+                />
               </span>
               <span className="hidden md:block">
-                <KortixLogo size={24} variant="symbol" />
+                <img
+                  src="/logo-hellenic-ai.svg"
+                  alt="Hellenic AI"
+                  className="h-auto w-122px"
+                  suppressHydrationWarning
+                />
               </span>
             </Link>
-            {/* Social links */}
+            <div className="text-[16px] leading-[24px] tracking-[-0.4px] font-medium text-[#737373]">
+              HellenicAI by Hellenic Technologies – is a generalist AI Agent that acts on your behalf.
+            </div>
+
             <div className="flex items-center gap-3 pt-2">
               <a
-                href="https://github.com/kortix-ai/suna"
+                href="https://github.com/hellenictechnologies"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -47,7 +57,6 @@ export function SimpleFooter() {
                   />
                 </svg>
                 <span className={`text-xs font-medium text-muted-foreground group-hover:text-foreground transition-colors ${starsLoading ? 'opacity-50' : 'opacity-100'}`}>
-                  {formattedStars}
                 </span>
               </a>
               <a
@@ -69,7 +78,7 @@ export function SimpleFooter() {
                 </svg>
               </a>
               <a
-                href="https://x.com/kortix"
+                href="https://x.com/_HTA_"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
@@ -87,7 +96,7 @@ export function SimpleFooter() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/kortix/"
+                href="https://gr.linkedin.com/company/hellenic-technologies"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -106,7 +115,6 @@ export function SimpleFooter() {
               </a>
             </div>
 
-            {/* Theme and language switchers */}
             <div className="flex items-center gap-3 pt-2">
               <div className="rounded-lg bg-muted/50">
                 <ThemeToggle variant="compact" />
@@ -117,7 +125,6 @@ export function SimpleFooter() {
             </div>
           </div>
 
-          {/* Link columns from site config */}
           {siteConfig.footerLinks.map((column, columnIndex) => (
             <div key={columnIndex} className="space-y-3">
               <h3 className="text-sm font-semibold text-foreground">
@@ -140,27 +147,12 @@ export function SimpleFooter() {
           ))}
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-border/40">
+        <div className="mt-12 border-t border-border/40">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              © {currentYear} Kortix. All rights reserved.
-            </p>
-            <div className="flex items-center gap-1 text-sm text-muted-foreground">
-              <span>Built with</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="size-4 text-rose-500"
-              >
-                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-              </svg>
-              <span>across America, Europe & Asia</span>
-            </div>
+            <img src="/images/icons/footer.png" alt="Hellenic Technologies" className="w-full"/>
           </div>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }

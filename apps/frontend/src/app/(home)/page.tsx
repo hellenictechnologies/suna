@@ -1,6 +1,7 @@
 'use client';
 
 import { Suspense, lazy } from 'react';
+import Link from 'next/link';
 import { BackgroundAALChecker } from '@/components/auth/background-aal-checker';
 import { HeroSection as NewHeroSection } from '@/components/home/hero-section';
 

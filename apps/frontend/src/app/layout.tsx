@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   description: siteMetadata.description,
   keywords: siteMetadata.keywords,
-  authors: [{ name: 'Kortix Team', url: 'https://www.kortix.com' }],
-  creator: 'Kortix Team',
-  publisher: 'Kortix Team',
+  authors: [{ name: 'HellenicAI Team', url: 'https://ai.hellenictechnologies.com' }],
+  creator: 'HellenicAI Team',
+  publisher: 'HellenicAI Team',
   applicationName: siteMetadata.name,
   robots: {
     index: true,
@@ -90,7 +90,7 @@ export const metadata: Metadata = {
       { url: '/favicon-light.png', sizes: '32x32', media: '(prefers-color-scheme: dark)' },
     ],
     shortcut: '/favicon.png',
-    apple: [{ url: '/logo_black.png', sizes: '180x180' }],
+    apple: [{ url: '/ht-symbol.png', sizes: '180x180' }],
   },
   manifest: '/manifest.json',
   alternates: {
@@ -166,17 +166,17 @@ export default function RootLayout({
         />
         
         {/* Static SEO meta tags - rendered in initial HTML */}
-        <title>Kortix: Your Autonomous AI Worker</title>
+        <title>HellenicAI: Your AI Employee</title>
         <meta name="description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta name="keywords" content="Kortix, AI Worker, Agentic AI, Autonomous AI Worker, AI Automation, AI Workflow Automation, AI Assistant, Task Automation" />
-        <meta property="og:title" content="Kortix: Your Autonomous AI Worker" />
+        <meta name="keywords" content="HellenicAI, AI Worker, Agentic AI, Autonomous AI Worker, AI Automation, AI Workflow Automation, AI Assistant, Task Automation" />
+        <meta property="og:title" content="HellenicAI: Your AI Employee" />
         <meta property="og:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
         <meta property="og:image" content="https://kortix.com/banner.png" />
         <meta property="og:url" content="https://kortix.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Kortix" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kortix: Your Autonomous AI Worker" />
+        <meta name="twitter:title" content="HellenicAI: Your AI Employee" />
         <meta name="twitter:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
         <meta name="twitter:image" content="https://kortix.com/banner.png" />
         <meta name="twitter:site" content="@kortix" />

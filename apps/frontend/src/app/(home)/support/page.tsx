@@ -153,10 +153,10 @@ function SupportPageContent() {
                       Send us a detailed message and we'll get back to you as soon as possible.
                     </p>
                     <a 
-                      href="mailto:support@kortix.com" 
+                      href="mailto:support@hellenictechnologies.com" 
                       className="text-primary hover:underline font-medium inline-flex items-center gap-2"
                     >
-                      support@kortix.com
+                      support@hellenictechnologies.com
                     </a>
                   </div>
                 </div>

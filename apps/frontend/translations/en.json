@@ -346,6 +346,7 @@
     "remaining": "remaining"
   },
   "dashboard": {
+  "appName": "HellenicAI",
     "title": "Dashboard",
     "welcome": "Welcome",
     "whatWouldYouLike": "What do you want to get done?",
@@ -356,10 +357,11 @@
     "scheduledTriggers": "Scheduled Triggers",
     "appTriggers": "App Triggers",
     "limitsExceeded": "You've reached your chat limit. Upgrade your plan to create more chats.",
-    "modeSubtitle": "Choose a mode to get started with templates and examples",
+    "modeSubtitle": "AI-powered marketing, automation, and customer engagement, built by Hellenic Technologies",
     "agentInitiatedSuccessfully": "Worker initiated successfully",
     "aiAssistantReady": "Your AI assistant is ready to help",
     "greetings": {
+      "default": "hellenicAI helps your business grow faster.",
       "morning": [
         "Good morning! What's on the agenda?",
         "Rise and shine! What are we building?",

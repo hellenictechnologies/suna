@@ -39,28 +39,28 @@ export function getPlanName(subscriptionData: any, isLocal: boolean = false): st
  * @returns The path to the plan icon SVG, or null if no icon exists (e.g., Basic tier)
  */
 export function getPlanIcon(planName: string, isLocal: boolean = false): string | null {
-  if (isLocal) return '/plan-icons/ultra.svg';
+  if (isLocal) return ''; // '/plan-icons/ultra.svg';
 
   const plan = planName?.toLowerCase();
 
   // Basic/Free tier - no icon
   if (plan?.includes('free') || plan?.includes('basic')) {
-    return '/plan-icons/basic.svg';
+    return ''; // '/plan-icons/basic.svg';
   }
 
   // Ultra tier
   if (plan?.includes('ultra')) {
-    return '/plan-icons/ultra.svg';
+    return ''; //'/plan-icons/ultra.svg';
   }
 
   // Pro tier (Pro, Business, Enterprise, Scale, Max)
   if (plan?.includes('pro') || plan?.includes('business') || plan?.includes('enterprise') || plan?.includes('scale') || plan?.includes('max')) {
-    return '/plan-icons/pro.svg';
+    return ''; //'/plan-icons/pro.svg';
   }
 
   // Plus tier
   if (plan?.includes('plus')) {
-    return '/plan-icons/plus.svg';
+    return ''; //'/plan-icons/plus.svg';
   }
 
   // Default to null for any unrecognized plans

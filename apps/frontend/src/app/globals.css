@@ -73,6 +73,8 @@
   --exitToRight: exitToRight 250ms ease;
   --animate-elliptical-orbit: elliptical-orbit 20s linear infinite;
   --animate-shiny-text: shiny-text 8s infinite;
+  --breakpoint-3xl: 119rem;
+  --breakpoint-4xl: 149rem;
   @keyframes orbit {
     0% {
       transform: rotate(calc(var(--angle) * 1deg))

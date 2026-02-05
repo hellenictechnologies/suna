@@ -126,8 +126,8 @@ export default function ActivateTrialPage() {
         <CardHeader className="text-center space-y-4">
           <div>
             <CardTitle className="text-2xl font-medium flex items-center justify-center gap-2">
-              <KortixLogo />
-              <span>Welcome to Kortix</span>
+              <KortixLogo size={50}/>
+              <span>Welcome to HellenicAI</span>
             </CardTitle>
             <CardDescription className="mt-2">
               Start your journey with a 7-day free trial

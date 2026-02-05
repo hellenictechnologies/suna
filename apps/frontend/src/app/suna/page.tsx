@@ -109,8 +109,8 @@ export default function SunaPage() {
               {/* Kortix Symbol with grain texture */}
               <div className="relative mb-8 sm:mb-12" style={{ width: '80px', height: '80px' }}>
                 <Image
-                  src="/kortix-symbol.svg"
-                  alt="Kortix"
+                  src="/ht-symbol.png"
+                  alt="Hellenic AI"
                   fill
                   className="object-contain dark:invert"
                   priority
@@ -124,8 +124,8 @@ export default function SunaPage() {
                     backgroundRepeat: 'repeat',
                     mixBlendMode: 'multiply',
                     opacity: 0.6,
-                    maskImage: 'url(/kortix-symbol.svg)',
-                    WebkitMaskImage: 'url(/kortix-symbol.svg)',
+                    maskImage: 'url(/ht-symbol.png)',
+                    WebkitMaskImage: 'url(/ht-symbol.png)',
                     maskSize: 'contain',
                     WebkitMaskSize: 'contain',
                     maskRepeat: 'no-repeat',
@@ -138,7 +138,7 @@ export default function SunaPage() {
 
               {/* Main Heading */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tighter text-balance text-center">
-                Kortix
+                Hellenic AI
               </h1>
 
             </div>
@@ -149,11 +149,11 @@ export default function SunaPage() {
                 href="/"
                 className="flex h-12 items-center justify-center w-full sm:w-auto px-8 text-center rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-all shadow-sm font-medium"
               >
-                Go to Kortix
+                Go to Hellenic AI
                 <ArrowRight className="ml-2 size-4" />
               </Link>
               <a
-                href="https://github.com/kortix-ai/suna"
+                href="https://github.com/hellenictechnologies"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-12 items-center justify-center w-full sm:w-auto px-8 text-center rounded-full border border-border bg-background hover:bg-accent/50 transition-all font-medium"

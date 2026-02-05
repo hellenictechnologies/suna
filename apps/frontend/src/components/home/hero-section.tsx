@@ -82,13 +82,13 @@ export function HeroSection() {
       <div className="flex flex-col h-full w-full overflow-hidden relative">
         {/* Brandmark Background - responsive sizing for all devices */}
         <div 
-          className="absolute inset-0 pointer-events-none overflow-hidden"
+          className="absolute inset-0 pointer-events-none overflow-hidden w-[95%]"
           aria-hidden="true"
         >
           <img
-            src="/kortix-brandmark-bg.svg"
-            alt=""
-            className="absolute left-1/2 -translate-x-1/2 top-[-10%] sm:top-1/2 sm:-translate-y-1/2 w-[140vw] min-w-[700px] h-auto sm:w-[160vw] sm:min-w-[1000px] md:min-w-[1200px] lg:w-[162vw] lg:min-w-[1620px] object-contain select-none invert dark:invert-0"
+            src="/images/background.png"
+            alt="hAI background"
+            className="object-cover w-full h-full"
             draggable={false}
           />
         </div>
@@ -98,7 +98,8 @@ export function HeroSection() {
           {/* Centered content: Greeting + Subtitle + Modes
               - Mobile: shifted up with pb-28 to account for chat input and feel more balanced
               - Desktop: true center with no offset */}
-          <div className="absolute inset-0 flex items-center justify-center px-4 pb-28 sm:pb-0 pointer-events-none">
+
+          <div className="w-full max-w-4xl mx-auto h-screen overflow-hidden relative flex flex-col items-center justify-center gap-10 pb-28 sm:pb-0">
             <div className="w-full max-w-3xl mx-auto flex flex-col items-center text-center pointer-events-auto">
               {/* Greeting */}
               <div className="animate-in fade-in-0 slide-in-from-bottom-4 duration-500 fill-mode-both">

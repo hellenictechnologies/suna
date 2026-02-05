@@ -8,9 +8,9 @@ export const siteConfig = {
   nav: {
     links: [
       { id: 1, name: 'Home', href: '/' },
-      { id: 2, name: 'About', href: '/about' },
+      { id: 2, name: 'Use Cases', href: '/about' },
       { id: 3, name: 'Pricing', href: '/pricing' },
-      { id: 4, name: 'Tutorials', href: '/tutorials' },
+      // { id: 4, name: 'Tutorials', href: '/tutorials' },
     ],
   },
   hero: {
@@ -20,21 +20,19 @@ export const siteConfig = {
   cloudPricingItems: pricingTiers,
   footerLinks: [
     {
-      title: 'Kortix',
+      title: 'Hellenic Technologies',
       links: [
         { id: 1, title: 'About', url: '/about' },
-        { id: 2, title: 'Careers', url: '/careers' },
-        { id: 3, title: 'Support', url: '/support' },
-        { id: 4, title: 'Contact', url: 'mailto:hey@kortix.com' },
+        { id: 2, title: 'Contact', url: 'mailto:support@hellenictechnologies.com' },
+        { id: 3, title: 'Blog', url: '/blog' },
       ],
     },
     {
       title: 'Resources',
       links: [
-        { id: 5, title: 'Tutorials', url: '/tutorials' },
-        { id: 6, title: 'Documentation', url: 'https://github.com/kortix-ai/suna' },
-        { id: 7, title: 'Discord', url: 'https://discord.com/invite/RvFhXUdZ9H' },
-        { id: 8, title: 'GitHub', url: 'https://github.com/kortix-ai/suna' },
+        { id: 4, title: 'Documentation', url: 'https://github.com/hellenictechnologies' },
+        { id: 5, title: 'Discord', url: '#' },
+        { id: 6, title: 'GitHub', url: 'https://github.com/hellenictechnologies' },
       ],
     },
     {
@@ -42,7 +40,7 @@ export const siteConfig = {
       links: [
         { id: 9, title: 'Privacy Policy', url: '/legal?tab=privacy' },
         { id: 10, title: 'Terms of Service', url: '/legal?tab=terms' },
-        { id: 11, title: 'License', url: 'https://github.com/kortix-ai/suna/blob/main/LICENSE' },
+        { id: 11, title: 'License Apache 2.0', url: '#' },
       ],
     },
   ],

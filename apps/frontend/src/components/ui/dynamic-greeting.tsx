@@ -36,8 +36,8 @@ export function DynamicGreeting({ className }: DynamicGreetingProps) {
     
     const hour = new Date().getHours();
     
-    // 40% chance time-based, 60% random
-    const useTimeBased = greetingTypeRandom < 0.4;
+    // 40% chance time-based, 60% random but for now make it false
+    const useTimeBased = false; // greetingTypeRandom < 0.4;
 
     if (useTimeBased) {
       if (hour >= 5 && hour < 12) {
@@ -80,7 +80,9 @@ export function DynamicGreeting({ className }: DynamicGreetingProps) {
       t('greetings.random.13'),
       t('greetings.random.14'),
     ];
-    return greetings[Math.floor(greetingIndexRandom * greetings.length)];
+    // return greetings[Math.floor(greetingIndexRandom * greetings.length)];
+    // Hardcode the default greeting
+    return t('greetings.default');
   }, [t, mounted]);
 
   // Calculate lift amount based on distance from hovered letter
@@ -109,9 +111,10 @@ export function DynamicGreeting({ className }: DynamicGreetingProps) {
   let globalLetterIndex = 0;
 
   return (
-    <p className={cn('tracking-tight', className)}>
+    <p className={cn('tracking-tight text-[60px]', className)}>
       {/* Accessibility: announce the full greeting as a sentence, not letter-by-letter */}
       <span className="sr-only">{greeting}</span>
+
       <span aria-hidden="true">
         {tokens.map((token, tokenIndex) => {
           // Preserve whitespace as-is so wrapping occurs only at spaces.

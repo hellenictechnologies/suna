@@ -181,7 +181,7 @@ function StatusPageContent() {
                   Service Status
                 </CardTitle>
                 <CardDescription className="text-sm">
-                  Current operational status of all Kortix services
+                  Current operational status of all HellenicAI services
                 </CardDescription>
               </CardHeader>
               <CardContent>

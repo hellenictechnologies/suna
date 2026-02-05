@@ -1175,12 +1175,12 @@ export function SunaModesPanel({
                     : "bg-background/50 border-border/40 text-muted-foreground hover:text-foreground hover:border-border hover:bg-muted dark:bg-card/30 dark:hover:bg-muted"
                 )}
               >
-                {/* Icon */}
+
                 <span className="transition-colors duration-200 [&>svg]:w-4 [&>svg]:h-4">
                   {mode.icon}
                 </span>
                 
-                {/* Label */}
+
                 <span className="transition-colors duration-200">
                   {mode.label}
                 </span>

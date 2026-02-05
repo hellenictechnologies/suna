@@ -154,19 +154,21 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
           <div className="relative flex h-[56px] items-center py-2 md:p-4">
             {/* Left Section - Logo */}
             <div className="flex items-center justify-start flex-shrink-0">
-              <Link href="/" className="flex items-center gap-3">
-                <KortixLogo size={18} variant='logomark' />
+              <Link href="/" className="flex items-center gap-3 dark:invert">
+                <KortixLogo size={20} variant='logomark' />
               </Link>
             </div>
 
             {/* Center Section - Nav Links (absolutely centered) */}
             <nav className="hidden md:flex items-center justify-center gap-1 absolute left-1/2 -translate-x-1/2">
-              {filteredNavLinks.map((item) => (
+              {filteredNavLinks.map((item, index) => (
                 <Link
                   key={item.id}
                   href={item.href}
                   className={cn(
                     "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
+                    index === filteredNavLinks.length - 1 &&
+                      "inline-flex items-center justify-center h-8 w-[75.25px] rounded-full border border-border/60 ",
                     pathname === item.href
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
@@ -175,35 +177,6 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
                   {item.name}
                 </Link>
               ))}
-              
-              {/* Mobile App Download with QR Popover */}
-              <div className="relative group">
-                <Link
-                  href="/app"
-                  className={cn(
-                    "px-3 py-1.5 text-sm font-medium rounded-lg transition-colors",
-                    pathname === '/app'
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
-                  )}
-                >
-                  Mobile
-                </Link>
-                
-                {/* QR Code Popover - appears on hover */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                  <div className="relative bg-[#E8E8E8] dark:bg-[#1a1a1a] rounded-2xl border border-border/60 dark:border-[#2a2a2a] p-4 min-w-[200px]">
-                    <AppDownloadQR size={160} logoSize={24} className="rounded-xl p-3 shadow-md" />
-                    <p className="text-xs text-muted-foreground text-center mt-3">
-                      Scan to download
-                    </p>
-                    <div className="flex items-center justify-center gap-1.5 mt-1.5">
-                      <AppleLogo className="h-3 w-3 text-muted-foreground/60" />
-                      <PlayIcon className="h-2.5 w-2.5 text-muted-foreground/60" />
-                    </div>
-                  </div>
-                </div>
-              </div>
             </nav>
 
             {/* Right Section - Actions */}
@@ -211,7 +184,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
               {user ? (
                 <Link
                   href="/dashboard"
-                  className="h-8 px-4 text-sm font-medium rounded-lg bg-foreground text-background hover:bg-foreground/90 transition-colors inline-flex items-center justify-center"
+                  className="h-8 px-4 text-sm font-medium rounded-lg bg-foreground text-white dark:text-black dark:bg-foreground hover:bg-foreground/90 transition-colors inline-flex items-center justify-center"
                 >
                   Dashboard
                 </Link>
@@ -225,6 +198,10 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
                   {t('tryFree')}
                 </Link>
               )}
+
+              {/* <div className="hidden md:flex items-center">
+                <ThemeToggle />
+              </div> */}
               
               {/* Mobile Menu Button */}
               <button
@@ -251,8 +228,8 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
           >
             {/* Header - matches navbar positioning */}
             <div className="flex h-[56px] items-center justify-between px-6 py-2">
-              <Link href="/" className="flex items-center gap-3" onClick={() => setIsDrawerOpen(false)}>
-                <KortixLogo size={18} variant='logomark' />
+              <Link href="/" className="flex items-center gap-3 dark:invert" onClick={() => setIsDrawerOpen(false)}>
+                <KortixLogo size={20} variant='logomark' />
               </Link>
               <button
                 onClick={toggleDrawer}
@@ -349,9 +326,9 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
                 )}
                 
                 {/* Theme Toggle */}
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <ThemeToggle />
-                </div>
+                </div> */}
               </motion.div>
             </div>
           </motion.div>

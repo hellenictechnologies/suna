@@ -140,7 +140,7 @@ export function HelpSidebar({ onSearchClick, ...props }: HelpSidebarProps) {
       </SidebarContent>
       <SidebarFooter className="bg-transparent p-4 flex flex-row justify-between items-center">
         <div className="text-muted-foreground text-xs">Version 0.1.0</div>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </SidebarFooter>
       <SidebarRail />
     </Sidebar>
