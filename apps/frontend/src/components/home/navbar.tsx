@@ -155,7 +155,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
             {/* Left Section - Logo */}
             <div className="flex items-center justify-start flex-shrink-0">
               <Link href="/" className="flex items-center gap-3 dark:invert">
-                <KortixLogo size={20} variant='logomark' />
+                <KortixLogo variant='logomark' />
               </Link>
             </div>
 
@@ -199,9 +199,9 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
                 </Link>
               )}
 
-              {/* <div className="hidden md:flex items-center">
+              <div className="hidden md:flex items-center">
                 <ThemeToggle />
-              </div> */}
+              </div>
               
               {/* Mobile Menu Button */}
               <button
@@ -229,7 +229,7 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
             {/* Header - matches navbar positioning */}
             <div className="flex h-[56px] items-center justify-between px-6 py-2">
               <Link href="/" className="flex items-center gap-3 dark:invert" onClick={() => setIsDrawerOpen(false)}>
-                <KortixLogo size={20} variant='logomark' />
+                <KortixLogo variant='logomark' />
               </Link>
               <button
                 onClick={toggleDrawer}
@@ -326,9 +326,9 @@ export function Navbar({ isAbsolute = false }: NavbarProps) {
                 )}
                 
                 {/* Theme Toggle */}
-                {/* <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between">
                   <ThemeToggle />
-                </div> */}
+                </div>
               </motion.div>
             </div>
           </motion.div>

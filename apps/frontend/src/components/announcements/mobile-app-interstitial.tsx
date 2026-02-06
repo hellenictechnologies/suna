@@ -103,58 +103,6 @@ export function MobileAppInterstitial() {
           >
             <X className="h-4 w-4 text-neutral-500 dark:text-neutral-400" />
           </button>
-
-          {/* Card */}
-          <button
-            onClick={openStore}
-            className="w-full bg-white dark:bg-neutral-900 border border-black/10 dark:border-white/10 rounded-2xl shadow-xl text-left active:scale-[0.98] transition-transform"
-          >
-            <div className="p-5 flex items-center gap-4">
-              {/* App Icon */}
-              <div className="w-14 h-14 bg-black dark:bg-white rounded-xl flex items-center justify-center flex-shrink-0">
-                <KortixLogo className="w-7 h-7 text-white dark:text-black" />
-              </div>
-
-              {/* Text */}
-              <div className="flex-1 min-w-0">
-                <h3 className="text-base font-semibold text-neutral-900 dark:text-white mb-0.5">
-                  Get Kortix for Mobile
-                </h3>
-                <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                  Your AI Worker, in your pocket
-                </p>
-              </div>
-
-              {/* Store Button - minimal design */}
-              <div className="flex-shrink-0 h-10 px-3 bg-black dark:bg-white rounded-lg flex items-center justify-center gap-2">
-                {isIOS ? (
-                  <>
-                    <AppleLogo className="h-5 w-5 text-white dark:text-black" />
-                    <div className="flex flex-col items-start">
-                      <span className="text-[8px] text-white/70 dark:text-black/70 leading-none">
-                        App Store
-                      </span>
-                      <span className="text-[11px] font-semibold text-white dark:text-black leading-tight">
-                        iOS
-                      </span>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <GooglePlayLogo className="h-4 w-4 text-white dark:text-black" />
-                    <div className="flex flex-col items-start">
-                      <span className="text-[8px] text-white/70 dark:text-black/70 leading-none">
-                        Google Play
-                      </span>
-                      <span className="text-[11px] font-semibold text-white dark:text-black leading-tight">
-                        Android
-                      </span>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
-          </button>
         </div>
       </motion.div>
     </AnimatePresence>

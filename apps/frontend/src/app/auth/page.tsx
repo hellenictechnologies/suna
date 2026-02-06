@@ -320,15 +320,15 @@ function LoginContent() {
       <div className="w-full relative overflow-hidden min-h-screen">
         <div className="relative flex flex-col items-center w-full px-4 sm:px-6 min-h-screen justify-center">
           {/* Animated background - same as registration success for consistency */}
-          <Suspense fallback={null}>
+          {/* <Suspense fallback={null}>
             <AnimatedBg variant="hero" />
-          </Suspense>
+          </Suspense> */}
 
           <div className="relative z-10 w-full max-w-[420px] flex flex-col items-center">
             {autoSendingCode ? (
               // Loading: Auto-sending new code
               <div className="flex flex-col items-center gap-6 animate-in fade-in duration-300">
-                <KortixLogo size={32} />
+                <KortixLogo/>
 
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-foreground/5 to-transparent animate-pulse" />
@@ -347,7 +347,7 @@ function LoginContent() {
             ) : newCodeSent ? (
               // Success: New code sent, show OTP input
               <div className="flex flex-col items-center gap-6 w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <KortixLogo size={32} />
+                <KortixLogo/>
 
                 {/* Success indicator */}
                 <div className="relative">
@@ -464,7 +464,7 @@ function LoginContent() {
             ) : (
               // No email provided or auto-send failed - show manual form
               <div className="flex flex-col items-center gap-6 w-full animate-in fade-in slide-in-from-bottom-4 duration-500">
-                <KortixLogo size={32} />
+                <KortixLogo />
 
                 {/* Warning indicator */}
                 <div className="relative">
@@ -541,13 +541,13 @@ function LoginContent() {
       <div className="w-full relative overflow-hidden min-h-screen">
         <div className="relative flex flex-col items-center w-full px-4 sm:px-6 min-h-screen justify-center">
           {/* Animated background */}
-          <Suspense fallback={null}>
+          {/* <Suspense fallback={null}>
             <AnimatedBg variant="hero" />
-          </Suspense>
+          </Suspense> */}
 
           <div className="relative z-10 w-full max-w-[456px] flex flex-col items-center gap-8">
             {/* Logo */}
-            <KortixLogo size={32} />
+            <KortixLogo/>
 
             {/* Title */}
             <h1 className="text-[43px] font-normal tracking-tight text-foreground leading-none text-center whitespace-nowrap">
@@ -627,7 +627,7 @@ function LoginContent() {
     <div className="min-h-[100dvh] bg-background relative">
       <div className="absolute top-4 sm:top-6 left-4 sm:left-6 z-10">
         <Link href="/" className="flex items-center space-x-2">
-          <KortixLogo size={24} className="sm:w-7 sm:h-7" />
+          <KortixLogo className="sm:w-7 sm:h-7" />
         </Link>
       </div>
       <div className="flex min-h-[100dvh]">
@@ -692,7 +692,7 @@ function LoginContent() {
                     privacyPolicy: (chunks) => {
                       return (
                         <a
-                          href="https://www.kortix.com/legal?tab=privacy"
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:underline underline-offset-2 text-primary"
@@ -705,7 +705,7 @@ function LoginContent() {
                     termsOfService: (chunks) => {
                       return (
                         <a
-                          href="https://www.kortix.com/legal?tab=terms"
+                          href="#"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:underline underline-offset-2 text-primary"
@@ -763,28 +763,6 @@ function LoginContent() {
               }}
             />
           </div>
-        </div>
-        <div className="hidden lg:flex flex-1 items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/10" />
-          <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-            <Suspense fallback={null}>
-              <AnimatedBg
-                variant="hero"
-                customArcs={{
-                  left: [
-                    { pos: { left: -120, top: 150 }, opacity: 0.15 },
-                    { pos: { left: -120, top: 400 }, opacity: 0.18 },
-                  ],
-                  right: [
-                    { pos: { right: -150, top: 50 }, opacity: 0.2 },
-                    { pos: { right: 10, top: 650 }, opacity: 0.17 },
-                  ]
-                }}
-              />
-            </Suspense>
-          </div>
-
-          <ExampleShowcase />
         </div>
       </div>
     </div>
