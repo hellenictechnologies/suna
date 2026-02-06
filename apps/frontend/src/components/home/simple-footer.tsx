@@ -35,7 +35,7 @@ export function SimpleFooter() {
               </span>
             </Link>
             <div className="text-[16px] leading-[24px] tracking-[-0.4px] font-medium text-[#737373]">
-              HellenicAI by Hellenic Technologies – is a generalist AI Agent that acts on your behalf.
+              hellenicAI by Hellenic Technologies – is a generalist AI Agent that acts on your behalf.
             </div>
 
             <div className="flex items-center gap-3 pt-2">

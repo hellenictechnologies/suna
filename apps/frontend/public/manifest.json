@@ -1,7 +1,7 @@
 {
-  "name": "HellenicAI the Super Mega Giga Worker",
-  "short_name": "HellenicAI",
-  "description": "HellenicAI the Super Mega Giga Worker – A generalist AI Worker that is able to autonomously tackle complex tasks, browse the web, write and execute code, manage files, conduct research, automate workflows, and accomplish real-world objectives through natural conversation.",
+  "name": "hellenicAI the Super Mega Giga Worker",
+  "short_name": "hellenicAI",
+  "description": "hellenicAI the Super Mega Giga Worker – A generalist AI Worker that is able to autonomously tackle complex tasks, browse the web, write and execute code, manage files, conduct research, automate workflows, and accomplish real-world objectives through natural conversation.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

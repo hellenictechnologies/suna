@@ -88,7 +88,7 @@ export default function AppDownloadPage() {
             </h1>
             <p className="text-base text-muted-foreground text-center max-w-xl leading-relaxed">
               Your AI Worker, in your pocket.<br />
-              Download the app and take HellenicAI with you everywhere.
+              Download the app and take hellenicAI with you everywhere.
             </p>
           </motion.div>
 

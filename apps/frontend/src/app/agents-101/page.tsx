@@ -1123,7 +1123,7 @@ export default function Agents101Page() {
       <div className="fixed top-8 left-8 z-50">
         <Image
           src="/Logomark.svg"
-          alt="Kortix"
+          alt="hellenicAI"
           width={72}
           height={72}
           className="dark:invert"

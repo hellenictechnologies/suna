@@ -557,7 +557,7 @@ const LoggedInMenu: React.FC<UnifiedConfigMenuProps> = memo(function LoggedInMen
                                                     <div className="flex items-center gap-3">
                                                         {renderAgentIcon(isLoading && !displayAgent ? placeholderSunaAgent : displayAgent)}
                                                         <span className="flex-1 truncate font-medium text-left">
-                                                            {isKortixAgent ? 'Kortix' : displayAgent?.name}
+                                                            {isKortixAgent ? 'hellenicAI' : displayAgent?.name?.replace(/Kortix/g, 'hellenicAI')}
                                                         </span>
                                                     </div>
                                                 </DropdownMenuSubTrigger>

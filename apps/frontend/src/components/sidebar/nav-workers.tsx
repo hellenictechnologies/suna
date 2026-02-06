@@ -111,7 +111,9 @@ export function NavWorkers() {
                   className="flex-shrink-0"
                 />
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-medium truncate">{sunaAgent.name}</div>
+                  <div className="text-sm font-medium truncate">
+                    {sunaAgent?.name?.replace(/Kortix/g, 'hellenicAI') || 'hellenicAI'}
+                  </div>
                   <div className="text-xs text-muted-foreground truncate">Default agent</div>
                 </div>
                 <ChevronRight className="h-4 w-4 text-muted-foreground flex-shrink-0" />

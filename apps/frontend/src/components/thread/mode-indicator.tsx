@@ -23,15 +23,15 @@ const ModeLogo = memo(function ModeLogo({
   mode: 'basic' | 'advanced'; 
   height?: number;
 }) {
-  const darkSrc = mode === 'advanced' ? '/Advanced-Light.svg' : '/Basic-Light.svg';
-  const lightSrc = mode === 'advanced' ? '/Advanced-Dark.svg' : '/Basic-Dark.svg';
+  const darkSrc = mode === 'advanced' ? '/images/hellenicAI-advanced.svg' : '/images/hellenicAI-basic.svg';
+  const lightSrc = mode === 'advanced' ? '/images/hellenicAI-advanced.svg' : '/images/hellenicAI-basic.svg';
 
   return (
     <span className="flex-shrink-0 relative" style={{ height: `${height}px`, width: 'auto' }}>
       {/* Light mode image */}
       <img
         src={lightSrc}
-        alt={mode === 'advanced' ? 'Kortix Advanced' : 'Kortix Basic'}
+        alt={mode === 'advanced' ? 'hellenicAI Advanced' : 'hellenicAI Basic'}
         className="block dark:hidden"
         style={{ height: `${height}px`, width: 'auto' }}
         suppressHydrationWarning
@@ -39,7 +39,7 @@ const ModeLogo = memo(function ModeLogo({
       {/* Dark mode image */}
       <img
         src={darkSrc}
-        alt={mode === 'advanced' ? 'Kortix Advanced' : 'Kortix Basic'}
+        alt={mode === 'advanced' ? 'hellenicAI Advanced' : 'hellenicAI Basic'}
         className="hidden dark:block"
         style={{ height: `${height}px`, width: 'auto' }}
         suppressHydrationWarning
@@ -61,12 +61,12 @@ export const ModeIndicator = memo(function ModeIndicator() {
   const showAllModelsOption = !isProductionMode();
 
   const basicModel = useMemo(
-    () => modelOptions.find((m) => m.id === 'kortix/basic' || m.label === 'Kortix Basic'),
+    () => modelOptions.find((m) => m.id === 'kortix/basic' || m.label === 'hellenicAI Basic'),
     [modelOptions]
   );
   
   const powerModel = useMemo(
-    () => modelOptions.find((m) => m.id === 'kortix/power' || m.label === 'Kortix Advanced Mode'),
+    () => modelOptions.find((m) => m.id === 'kortix/power' || m.label === 'hellenicAI Advanced Mode'),
     [modelOptions]
   );
 
@@ -74,7 +74,7 @@ export const ModeIndicator = memo(function ModeIndicator() {
   const otherModels = useMemo(() => {
     return modelOptions.filter(
       (m) => m.id !== 'kortix/basic' && m.id !== 'kortix/power' && 
-             m.label !== 'Kortix Basic' && m.label !== 'Kortix Advanced Mode'
+             m.label !== 'hellenicAI Basic' && m.label !== 'hellenicAI Advanced Mode'
     ).sort((a, b) => (b.priority ?? 0) - (a.priority ?? 0));
   }, [modelOptions]);
 
@@ -110,7 +110,7 @@ export const ModeIndicator = memo(function ModeIndicator() {
         setIsOpen(false);
         usePricingModalStore.getState().openPricingModal({
           isAlert: true,
-          alertTitle: 'Upgrade to access Kortix Advanced mode',
+          alertTitle: 'Upgrade to access hellenicAI Advanced mode',
         });
       }
     }

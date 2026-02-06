@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 
 export const metadata: Metadata = {
-  title: 'Worker Conversation | Kortix',
-  description: 'Interactive Worker conversation powered by Kortix',
+  title: 'Worker Conversation | hellenicAI',
+  description: 'Interactive Worker conversation powered by hellenicAI',
   openGraph: {
-    title: 'Worker Conversation | Kortix',
-    description: 'Interactive Worker conversation powered by Kortix',
+    title: 'Worker Conversation | hellenicAI',
+    description: 'Interactive Worker conversation powered by hellenicAI',
     type: 'website',
   },
 };

@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'API Keys | HellenicAI',
-  description: 'Manage your API keys for programmatic access to HellenicAI',
+  title: 'API Keys | hellenicAI',
+  description: 'Manage your API keys for programmatic access to hellenicAI',
   openGraph: {
-    title: 'API Keys | HellenicAI',
-    description: 'Manage your API keys for programmatic access to HellenicAI',
+    title: 'API Keys | hellenicAI',
+    description: 'Manage your API keys for programmatic access to hellenicAI',
     type: 'website',
   },
 };

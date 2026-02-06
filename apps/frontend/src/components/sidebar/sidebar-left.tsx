@@ -256,10 +256,9 @@ export function SidebarLeft({
           )}>
 
             <Link href="/dashboard" onClick={() => isMobile && setOpenMobile(false)} className="flex items-center justify-center">
-              <KortixLogo 
-                size={20} 
+              <KortixLogo
                 className={cn(
-                  "flex-shrink-0 transition-[transform,opacity] duration-300 ease-out hover:rotate-180 hover:duration-700 transform-gpu",
+                  "flex-shrink-0 transition-[transform,opacity] duration-300 ease-out transform-gpu",
                   state === 'collapsed' && "group-hover/logo:opacity-0 group-hover/logo:scale-90"
                 )} 
               />

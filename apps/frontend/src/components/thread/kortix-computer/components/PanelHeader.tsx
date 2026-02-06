@@ -243,16 +243,16 @@ export const PanelHeader = memo(function PanelHeader({
         {/* Left: Logo - compact for mobile */}
         <div className="flex items-center min-w-0">
           <Image
-            src="/kortix-computer-white.svg"
-            alt="Kortix Computer"
+            src="/hellenic-ai-computer.png"
+            alt="hellenicAI Computer"
             width={120}
             height={14}
             className="hidden dark:block"
             priority
           />
           <Image
-            src="/kortix-computer-black.svg"
-            alt="Kortix Computer"
+            src="/hellenic-ai-computer.png"
+            alt="hellenicAI Computer"
             width={120}
             height={14}
             className="block dark:hidden"
@@ -300,16 +300,16 @@ export const PanelHeader = memo(function PanelHeader({
         className="flex items-center justify-center cursor-pointer select-none hover:opacity-80 transition-opacity"
       >
         <Image
-          src="/kortix-computer-white.svg"
-          alt="Kortix Computer"
+          src="/hellenic-ai-computer.png"
+          alt="hellenicAI Computer"
           width={140}
           height={16}
           className="hidden dark:block"
           priority
         />
         <Image
-          src="/kortix-computer-black.svg"
-          alt="Kortix Computer"
+          src="/hellenic-ai-computer.png"
+          alt="hellenicAI Computer"
           width={140}
           height={16}
           className="block dark:hidden"

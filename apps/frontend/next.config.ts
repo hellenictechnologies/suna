@@ -33,6 +33,8 @@ const getBackendUrl = (): string => {
 };
 
 const nextConfig = (): NextConfig => ({
+  allowedDevOrigins: ['sun.wpdev247.com'],
+  
   output: (process.env.NEXT_OUTPUT as 'standalone') || undefined,
   
   // Transpile shared package

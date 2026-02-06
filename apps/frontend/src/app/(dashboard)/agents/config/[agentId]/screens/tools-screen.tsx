@@ -29,7 +29,7 @@ export function ToolsScreen({ agentId }: ToolsScreenProps) {
         if (!areToolsEditable) {
             if (isSunaAgent) {
                 toast.error("Tools cannot be edited", {
-                    description: "HellenicAI's tools are managed centrally.",
+                    description: "hellenicAI's tools are managed centrally.",
                 });
             }
             return;
