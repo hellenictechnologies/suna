@@ -8,7 +8,6 @@ import { detectBestLocaleFromHeaders } from '@/lib/utils/geo-detection-server';
 const MARKETING_ROUTES = [
   '/',
   '/suna',
-  '/legal',
   '/support',
   '/templates',
 ];
@@ -21,7 +20,6 @@ const PUBLIC_ROUTES = [
   '/auth/signup',
   '/auth/forgot-password',
   '/auth/reset-password',
-  '/legal',
   '/api/auth',
   '/share', // Shared content should be public
   '/templates', // Template pages should be public
@@ -60,8 +58,8 @@ const PROTECTED_ROUTES = [
 
 // App store links for mobile redirect
 const APP_STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: '#',
+  android: '#',
 };
 
 // Detect mobile platform from User-Agent header (edge-optimized)

@@ -194,11 +194,11 @@ export default function ActivateTrialPage() {
           </div>
           <div className="text-center text-sm text-muted-foreground">
             By starting your trial, you agree to our{' '}
-            <Link href="/legal?tab=terms" className="underline hover:text-primary">
-              Terms of Service
+            <Link href="https://www.iubenda.com/terms-and-conditions/72788202" target="_blank" className="underline hover:text-primary">
+              Terms and Conditions
             </Link>{' '}
             and{' '}
-            <Link href="/legal?tab=privacy" className="underline hover:text-primary">
+            <Link href="https://www.iubenda.com/privacy-policy/72788202" target="_blank" className="underline hover:text-primary">
               Privacy Policy
             </Link>
           </div>

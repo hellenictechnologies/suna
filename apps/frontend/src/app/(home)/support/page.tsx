@@ -110,7 +110,7 @@ function SupportPageContent() {
 
                 <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
                   <Button asChild size="lg" className="text-base h-14 w-48 rounded-full px-8">
-                    <a href="mailto:support@hellenictechnologies.com">
+                    <a href="mailto:info@hellenictechnologies.com">
                       <Mail className="w-5 h-5"/>
                       Email Support
                     </a>
@@ -123,7 +123,7 @@ function SupportPageContent() {
                 </div>
 
                 <p className="text-sm text-muted-foreground">
-                  Or email us directly at <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">support@hellenictechnologies.com</a>
+                  Or email us directly at <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">info@hellenictechnologies.com</a>
                 </p>
               </div>
             </div>
@@ -153,10 +153,10 @@ function SupportPageContent() {
                       Send us a detailed message and we'll get back to you as soon as possible.
                     </p>
                     <a 
-                      href="mailto:support@hellenictechnologies.com" 
+                      href="mailto:info@hellenictechnologies.com" 
                       className="text-primary hover:underline font-medium inline-flex items-center gap-2"
                     >
-                      support@hellenictechnologies.com
+                      info@hellenictechnologies.com
                     </a>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ function SupportPageContent() {
                     <p className="text-muted-foreground text-sm mb-4">
                       Pro and Team customers receive priority support with dedicated assistance.
                     </p>
-                    <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">
+                    <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">
                       Contact us
                     </a>
                   </div>
@@ -228,7 +228,7 @@ function SupportPageContent() {
                   question="How do I request a new feature?"
                   answer={
                     <>
-                      We love feature requests! Email us at <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">support@hellenictechnologies.com</a> with details about what you'd like to see and how it would help you. We carefully review all suggestions and prioritize features based on user feedback for our product roadmap.
+                      We love feature requests! Email us at <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">info@hellenictechnologies.com</a> with details about what you'd like to see and how it would help you. We carefully review all suggestions and prioritize features based on user feedback for our product roadmap.
                     </>
                   }
                 />
@@ -236,7 +236,7 @@ function SupportPageContent() {
                   question="How do I report a bug?"
                   answer={
                     <>
-                      If you encounter a bug, please email <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">support@hellenictechnologies.com</a> with a detailed description of the issue, steps to reproduce it, and any error messages you're seeing. Screenshots or screen recordings are extremely helpful. We'll investigate and work on a fix promptly.
+                      If you encounter a bug, please email <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">info@hellenictechnologies.com</a> with a detailed description of the issue, steps to reproduce it, and any error messages you're seeing. Screenshots or screen recordings are extremely helpful. We'll investigate and work on a fix promptly.
                     </>
                   }
                 />
@@ -244,7 +244,7 @@ function SupportPageContent() {
                   question="What if I don't get credits after paying?"
                   answer={
                     <>
-                      If your credits don't appear after payment, contact <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">support@hellenictechnologies.com</a> immediately. We prioritize billing and credit issues for all users regardless of tier and will resolve this as quickly as possible, typically within a few hours during business days.
+                      If your credits don't appear after payment, contact <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">info@hellenictechnologies.com</a> immediately. We prioritize billing and credit issues for all users regardless of tier and will resolve this as quickly as possible, typically within a few hours during business days.
                     </>
                   }
                 />
@@ -284,8 +284,8 @@ function SupportPageContent() {
                           <h4 className="font-medium mb-2 text-sm">Option 1: Contact Support</h4>
                           <p className="text-muted-foreground text-sm mb-3">
                             You can request account deletion by contacting our support team. Simply email us at{' '}
-                            <a href="mailto:support@hellenictechnologies.com" className="text-primary hover:underline font-medium">
-                              support@hellenictechnologies.com
+                            <a href="mailto:info@hellenictechnologies.com" className="text-primary hover:underline font-medium">
+                              info@hellenictechnologies.com
                             </a>
                             {' '}with your account deletion request, and we'll process it for you.
                           </p>
@@ -335,7 +335,7 @@ function SupportPageContent() {
                 </p>
               </SectionHeader>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 border-t border-border">
+              <div className="grid grid-cols-1 md:grid-cols-2 border-t border-border">
                 <div className="p-8 border-r border-border space-y-4">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Shield className="w-6 h-6 text-primary" />
@@ -345,7 +345,7 @@ function SupportPageContent() {
                     <p className="text-muted-foreground text-sm mb-4">
                       Our terms and conditions for using hellenicAI services, including user responsibilities and service limitations.
                     </p>
-                    <Link href="#" className="text-primary hover:underline font-medium text-sm">
+                    <Link href="https://www.iubenda.com/terms-and-conditions/72788202#" target="_blank" className="text-primary hover:underline font-medium text-sm">
                       Read Terms →
                     </Link>
                   </div>
@@ -360,23 +360,8 @@ function SupportPageContent() {
                     <p className="text-muted-foreground text-sm mb-4">
                       How we collect, use, and protect your personal information. We're committed to data privacy and security.
                     </p>
-                    <Link href="#" className="text-primary hover:underline font-medium text-sm">
+                    <Link href="https://www.iubenda.com/privacy-policy/72788202" target="_blank" className="text-primary hover:underline font-medium text-sm">
                       Read Policy →
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="p-8 space-y-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold mb-2">Imprint</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      Company information and legal details about hellenicAI AI Corp, including contact information and registration.
-                    </p>
-                    <Link href="#" className="text-primary hover:underline font-medium text-sm">
-                      View Imprint →
                     </Link>
                   </div>
                 </div>
@@ -396,7 +381,7 @@ function SupportPageContent() {
               </p>
               <div className="pt-4">
                 <Button asChild size="lg" className="text-base h-14 w-48 rounded-full px-8">
-                  <a href="mailto:support@hellenictechnologies.com">
+                  <a href="mailto:info@hellenictechnologies.com">
                     <Mail className="w-5 h-5" />
                     Contact Support
                   </a>

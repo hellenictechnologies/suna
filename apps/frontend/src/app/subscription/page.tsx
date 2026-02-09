@@ -141,8 +141,8 @@ export default function SubscriptionRequiredPage() {
         <div className="text-center text-sm text-muted-foreground -mt-10">
           <p>
             Questions? Contact us at{' '}
-            <a href="mailto:support@hellenictechnologies.com" className="underline hover:text-primary">
-              support@hellenictechnologies.com
+            <a href="mailto:info@hellenictechnologies.com" className="underline hover:text-primary">
+              info@hellenictechnologies.com
             </a>
           </p>
         </div>

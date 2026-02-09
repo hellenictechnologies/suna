@@ -692,7 +692,7 @@ function LoginContent() {
                     privacyPolicy: (chunks) => {
                       return (
                         <a
-                          href="#"
+                          href="https://www.iubenda.com/privacy-policy/72788202"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:underline underline-offset-2 text-primary"
@@ -705,7 +705,7 @@ function LoginContent() {
                     termsOfService: (chunks) => {
                       return (
                         <a
-                          href="#"
+                          href="https://www.iubenda.com/terms-and-conditions/72788202"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="hover:underline underline-offset-2 text-primary"

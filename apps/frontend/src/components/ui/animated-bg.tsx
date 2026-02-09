@@ -258,7 +258,8 @@ interface AnimatedBgProps {
 export function AnimatedBg({ variant = 'hero', blurMultiplier = 1, sizeMultiplier = 1, customArcs }: AnimatedBgProps) {
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []);
-    
+    // disable animated bg for now
+    return null;
     // Show a static placeholder immediately to improve FCP
     // The animated version will replace it after hydration
     if (!mounted) {

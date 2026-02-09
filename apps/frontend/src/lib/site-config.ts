@@ -8,8 +8,8 @@ export const siteConfig = {
   nav: {
     links: [
       { id: 1, name: 'Home', href: '/' },
-      { id: 2, name: 'Use Cases', href: '/about' },
-      { id: 3, name: 'Pricing', href: '/pricing' },
+      // { id: 2, name: 'Use Cases', href: '/about' },
+      { id: 2, name: 'Pricing', href: '/pricing' },
       // { id: 4, name: 'Tutorials', href: '/tutorials' },
     ],
   },
@@ -23,7 +23,7 @@ export const siteConfig = {
       title: 'Hellenic Technologies',
       links: [
         { id: 1, title: 'About', url: '/about' },
-        { id: 2, title: 'Contact', url: 'mailto:support@hellenictechnologies.com' },
+        { id: 2, title: 'Contact', url: 'mailto:info@hellenictechnologies.com' },
         { id: 3, title: 'Blog', url: '/blog' },
       ],
     },
@@ -38,8 +38,8 @@ export const siteConfig = {
     {
       title: 'Legal',
       links: [
-        { id: 9, title: 'Privacy Policy', url: '/legal?tab=privacy' },
-        { id: 10, title: 'Terms of Service', url: '/legal?tab=terms' },
+        { id: 9, title: 'Privacy Policy', url: 'https://www.iubenda.com/privacy-policy/72788202' },
+        { id: 10, title: 'Terms of Service', url: 'https://www.iubenda.com/privacy-policy/72788202/cookie-policy' },
         { id: 11, title: 'License Apache 2.0', url: '#' },
       ],
     },
