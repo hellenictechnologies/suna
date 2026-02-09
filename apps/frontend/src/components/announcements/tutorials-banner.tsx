@@ -38,7 +38,7 @@ export function TutorialsBanner() {
     localStorage.setItem(STORAGE_KEY, 'true');
   };
 
-  if (!mounted || !isVisible || !user) return null;
+  if (!mounted || !isVisible || !user || true) return null;
 
   return (
     <AnimatePresence>
@@ -113,7 +113,6 @@ export function TutorialsBanner() {
                 </div>
               </div>
 
-              {/* CTA Button */}
               <div className="mt-3 flex items-center justify-between">
                 <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
                   <Play className="w-3 h-3" />
@@ -124,7 +123,7 @@ export function TutorialsBanner() {
                   <ArrowRight className="w-3 h-3" />
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
         </Link>
       </motion.div>

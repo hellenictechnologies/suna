@@ -55,7 +55,7 @@ export function DashboardPromoBanner() {
   };
 
   // Only show on /dashboard, for confirmed free tier users, and if not dismissed
-  if (!shouldShow || !promo) return null;
+  if (!shouldShow || !promo || true) return null;
 
   return (
     <AnimatePresence>

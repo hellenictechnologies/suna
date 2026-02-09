@@ -151,7 +151,7 @@ export function KortixAppBanners(props: KortixAppBannersProps) {
 
   const desktopPlatformLabel = desktopPlatform === 'windows' ? 'Windows' : 'Mac (M series)';
 
-  if (!mounted || !isVisible) return null;
+  if (!mounted || !isVisible || true) return null;
   if (!mobileVisible && !desktopVisible) return null;
 
   const showBothBanners = mobileVisible && desktopVisible;

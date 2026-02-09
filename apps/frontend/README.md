@@ -1,4 +1,4 @@
-# Kortix Frontend
+# hellenicAI Frontend
 
 ## Quick Setup
 

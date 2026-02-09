@@ -124,7 +124,8 @@ export function usePromo(pollInterval = 1000): PromoState | null {
 
     // Return the highest priority active promo
     const activePromo = activePromos[0];
-    if (!activePromo) {
+    // disable promos for now but keep the logic for future use
+    if (!activePromo || true) {
       return null;
     }
 
