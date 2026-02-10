@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
-    creator: '@kortix',
-    site: '@kortix',
+    creator: '@_HTA_',
+    site: '@hellenicai',
     images: ['/banner.png'],
   },
   icons: {
@@ -171,23 +171,16 @@ export default function RootLayout({
         <meta name="keywords" content="hellenicAI, AI Worker, Agentic AI, Autonomous AI Worker, AI Automation, AI Workflow Automation, AI Assistant, Task Automation" />
         <meta property="og:title" content="hellenicAI: Your AI Employee" />
         <meta property="og:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta property="og:image" content="https://kortix.com/banner.png" />
-        <meta property="og:url" content="https://kortix.com" />
+        <meta property="og:image" content="https://hellenicai.com/banner.png" />
+        <meta property="og:url" content="https://hellenicai.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Kortix" />
+        <meta property="og:site_name" content="hellenicai" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="hellenicAI: Your AI Employee" />
         <meta name="twitter:description" content="Built for complex tasks, designed for everything. The ultimate AI assistant that handles it all—from simple requests to mega-complex projects." />
-        <meta name="twitter:image" content="https://kortix.com/banner.png" />
-        <meta name="twitter:site" content="@kortix" />
-        <link rel="canonical" href="https://kortix.com" />
-        
-        {/* iOS Smart App Banner - shows native install banner in Safari */}
-        {!featureFlags.disableMobileAdvertising ? (
-          <meta name="apple-itunes-app" content="app-id=6754448524, app-argument=kortix://" />
-        ) : null}
-
-
+        <meta name="twitter:image" content="https://hellenicai.com/banner.png" />
+        <meta name="twitter:site" content="@hellenicai" />
+        <link rel="canonical" href="https://hellenicai.com" />
 
         <script
           type="application/ld+json"
@@ -196,16 +189,12 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: siteMetadata.name,
-              alternateName: ['Kortix', 'Kortix AI', 'Kortix: Your Autonomous AI Worker'],
+              alternateName: ['hellenicAI', 'hellenicAI AI', 'hellenicAI: Your Autonomous AI Worker'],
               url: siteMetadata.url,
               logo: `${siteMetadata.url}/favicon.png`,
               description: siteMetadata.description,
               foundingDate: '2024',
-              sameAs: [
-                'https://github.com/Kortix-ai/Suna',
-                'https://x.com/kortix',
-                'https://linkedin.com/company/kortix',
-              ],
+              sameAs: [],
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'Customer Support',
@@ -222,7 +211,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'SoftwareApplication',
               name: siteMetadata.title,
-              alternateName: [siteMetadata.name, 'Kortix'],
+              alternateName: [siteMetadata.name, 'hellenicAI'],
               applicationCategory: 'BusinessApplication',
               operatingSystem: 'Web, macOS, Windows, Linux',
               description: siteMetadata.description,

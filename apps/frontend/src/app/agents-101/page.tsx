@@ -15,7 +15,7 @@ interface Slide {
   content?: string[];
   bulletPoints?: string[];
   accent?: string;
-  diagram?: 'agent-loop' | 'kortix-stack' | 'task-types' | 'token-flow' | 'messages-array' | 'sandbox-arch' | 'tools-overview';
+  diagram?: 'agent-loop' | 'hellenicAI-stack' | 'task-types' | 'token-flow' | 'messages-array' | 'sandbox-arch' | 'tools-overview';
   leftColumn?: { title: string; points: string[] };
   rightColumn?: { title: string; points: string[] };
   codeSnippet?: string;
@@ -34,13 +34,13 @@ const slides: Slide[] = [
     id: 2,
     type: 'speaker',
     title: 'Marko Kraemer & Domenico Gagliardi',
-    subtitle: 'CEO & COO at Kortix',
+    subtitle: 'CEO & COO at hellenicAI',
   },
   {
     id: 3,
     type: 'title',
     title: 'Demo',
-    subtitle: 'Let\'s see Kortix in action',
+    subtitle: 'Let\'s see hellenicAI in action',
   },
 
   // Part 2: What Are Workers?
@@ -516,7 +516,7 @@ const InteractiveDemo = () => {
   );
 };
 
-// Kortix Stack Diagram
+// hellenicAI Stack Diagram
 const KortixStackDiagram = () => {
   const layers = [
     { label: 'User Interface', color: '#9DC2FF', width: '100%' },
@@ -666,7 +666,7 @@ const SlideContent = ({ slide }: { slide: Slide }) => {
           >
             <Image
               src="/Logomark.svg"
-              alt="Kortix"
+              alt="hellenicAI"
               width={140}
               height={40}
               className="dark:invert h-10 w-auto"
@@ -742,7 +742,7 @@ const SlideContent = ({ slide }: { slide: Slide }) => {
           >
             <Image
               src="/ht-symbol.png"
-              alt="Kortix"
+              alt="hellenicAI"
               width={80}
               height={80}
               className="dark:invert w-full h-full"
@@ -834,7 +834,7 @@ const SlideContent = ({ slide }: { slide: Slide }) => {
             transition={{ delay: 0.3 }}
           >
             {slide.diagram === 'agent-loop' && <AgentLoopDiagram />}
-            {slide.diagram === 'kortix-stack' && <KortixStackDiagram />}
+            {slide.diagram === 'hellenicAI-stack' && <KortixStackDiagram />}
             {slide.diagram === 'task-types' && <TaskTypesDiagram />}
             {slide.diagram === 'token-flow' && <TokenFlowDiagram />}
             {slide.diagram === 'messages-array' && <MessagesArrayDiagram />}

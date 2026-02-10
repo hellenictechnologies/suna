@@ -57,7 +57,7 @@ export default function CountryError() {
               className="w-full h-12 rounded-lg font-medium"
             >
               <Link
-                href="mailto:support@kortix.ai"
+                href="mailto:info@hellenictechnologies.com"
                 className="flex items-center justify-center gap-2"
               >
                 <Mail className="h-4 w-4" />

@@ -10,8 +10,8 @@ import { SimpleFooter } from '@/components/home/simple-footer';
 // This page only renders for desktop users
 
 const STORE_LINKS = {
-  ios: 'https://apps.apple.com/ie/app/kortix/id6754448524',
-  android: 'https://play.google.com/store/apps/details?id=com.kortix.app',
+  ios: '#',
+  android: '#',
 };
 
 // Kortix symbol SVG (inline to avoid loading issues)
@@ -61,7 +61,8 @@ export default function AppDownloadPage() {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
+  // always return null for now
+  if (!mounted || true) {
     return null;
   }
 
@@ -84,7 +85,7 @@ export default function AppDownloadPage() {
             </div>
             
             <h1 className="text-2xl md:text-3xl font-semibold text-foreground text-center tracking-tight mb-3">
-              Kortix for Mobile
+              hellenicAI for Mobile
             </h1>
             <p className="text-base text-muted-foreground text-center max-w-xl leading-relaxed">
               Your AI Worker, in your pocket.<br />
