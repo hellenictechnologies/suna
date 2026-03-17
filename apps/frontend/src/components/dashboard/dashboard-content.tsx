@@ -289,7 +289,7 @@ export function DashboardContent() {
 
       <div className="flex flex-col h-screen w-full overflow-hidden relative">
         {/* Brandmark Background - responsive sizing for all devices */}
-        <div 
+        {/* <div 
           className="absolute inset-0 pointer-events-none overflow-hidden w-[95%]"
           aria-hidden="true"
         >
@@ -299,7 +299,7 @@ export function DashboardContent() {
             className="object-cover w-full h-full"
             draggable={false}
           />
-        </div>
+        </div> */}
 
         {/* Left side - Menu (mobile) + Mode Selector - ABSOLUTE positioned */}
         <div className={cn(

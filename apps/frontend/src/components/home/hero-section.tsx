@@ -81,7 +81,7 @@ export function HeroSection() {
     <section id="hero" className="w-full h-dvh relative overflow-hidden">
       <div className="flex flex-col h-full w-full overflow-hidden relative">
         {/* Brandmark Background - responsive sizing for all devices */}
-        <div 
+        {/* <div 
           className="absolute inset-0 pointer-events-none overflow-hidden w-[95%]"
           aria-hidden="true"
         >
@@ -91,7 +91,7 @@ export function HeroSection() {
             className="object-cover w-full h-full"
             draggable={false}
           />
-        </div>
+        </div> */}
 
         {/* Main content area - greeting and modes centered */}
         <div className="flex-1 flex flex-col relative z-[1]">
