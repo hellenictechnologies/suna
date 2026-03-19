@@ -510,7 +510,7 @@ class Configuration:
         Get the frontend URL based on environment.
         
         Returns:
-        - Production: 'https://kortix.com' (or FRONTEND_URL_ENV if set)
+        - Production: 'https://workforce.hellenicai.com' (or FRONTEND_URL_ENV if set)
         - Staging: 'https://staging.kortix.com' (or FRONTEND_URL_ENV if set)
         - Local: FRONTEND_URL_ENV or 'http://localhost:3000'
         """
@@ -520,7 +520,7 @@ class Configuration:
         
         # Environment-based defaults
         if self.ENV_MODE == EnvMode.PRODUCTION:
-            return 'https://kortix.com'
+            return 'https://workforce.hellenicai.com'
         elif self.ENV_MODE == EnvMode.STAGING:
             return 'http://localhost:3000'
         else:
