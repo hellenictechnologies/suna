@@ -45,12 +45,18 @@ WORKDIR /app/apps/frontend
 
 # Allow overriding Node heap size for the build.
 ARG NODE_OPTIONS=--max-old-space-size=4096
+ARG NEXT_PUBLIC_BACKEND_URL
+ARG NEXT_PUBLIC_URL
+ARG NEXT_PUBLIC_ENV_MODE
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_OUTPUT=standalone
 ENV NODE_OPTIONS=${NODE_OPTIONS}
+ENV NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}
+ENV NEXT_PUBLIC_URL=${NEXT_PUBLIC_URL}
+ENV NEXT_PUBLIC_ENV_MODE=${NEXT_PUBLIC_ENV_MODE}
 
 RUN corepack enable pnpm && pnpm run build
 

@@ -329,6 +329,8 @@ async def log_requests_middleware(request: Request, call_next):
 
 # Define allowed origins based on environment
 allowed_origins = [
+    "https://workforce.hellenicai.com",
+    "https://backend.hellenicai.com",
     "https://www.kortix.com",
     "https://kortix.com",
     "https://dev.kortix.com",
