@@ -278,7 +278,7 @@ export function AgentConfigurationDialog({
     if (!areToolsEditable) {
       if (isSunaAgent) {
         toast.error("Tools cannot be edited", {
-          description: "Kortix's tools are managed centrally.",
+          description: "hellenicAI's tools are managed centrally.",
         });
       }
       return;
