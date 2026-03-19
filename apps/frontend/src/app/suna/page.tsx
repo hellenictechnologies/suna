@@ -4,18 +4,10 @@ import { ArrowRight, Github } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Suna is now Kortix | Kortix Suna - Open Source AI Worker',
-  description: 'Suna has rebranded to Kortix. Kortix (formerly Suna) is the same powerful open source AI assistant and generalist AI worker you know and love, now with a new name and bigger vision.',
+  title: 'hellenicAI | hellenicAI - Open Source AI Worker',
+  description: 'hellenicAI is the same powerful open source AI assistant and generalist AI worker you know and love, now with a new name and bigger vision.',
   keywords: [
-    'Suna',
-    'Kortix Suna',
-    'Suna AI',
-    'Suna assistant',
-    'Suna.so',
-    'where is Suna',
-    'Kortix',
-    'Suna rebrand',
-    'Suna is now Kortix',
+    'hellenicAI',
     'AI assistant',
     'open source AI',
     'generalist AI worker',
@@ -23,28 +15,28 @@ export const metadata: Metadata = {
     'autonomous AI',
   ],
   openGraph: {
-    title: 'Suna is now Kortix',
-    description: 'Kortix (formerly Suna) - Same powerful open source AI worker, new name.',
+    title: 'hellenicAI',
+    description: 'hellenicAI - Same powerful open source AI worker, new name.',
     type: 'website',
-    url: 'https://www.kortix.com/suna',
-    siteName: 'Kortix',
+    url: 'https://workforce.hellenicai.com/',
+    siteName: 'hellenicAI',
     images: [
       {
         url: '/banner.png',
         width: 1200,
         height: 630,
-        alt: 'Kortix - Formerly Suna',
+        alt: 'hellenicAI',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Suna is now Kortix',
-    description: 'Kortix (formerly Suna) - Same powerful open source AI worker, new name.',
+    title: 'hellenicAI',
+    description: 'hellenicAI - Same powerful open source AI worker, new name.',
     images: ['/banner.png'],
   },
   alternates: {
-    canonical: 'https://www.kortix.com/suna',
+    canonical: 'https://workforce.hellenicai.com/',
   },
   robots: {
     index: true,
@@ -62,17 +54,15 @@ export default function SunaPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Kortix',
-            alternateName: ['Suna', 'Kortix Suna', 'Suna AI'],
-            url: 'https://www.kortix.com',
-            logo: 'https://www.kortix.com/favicon.png',
+            name: 'hellenicAI',
+            alternateName: ['hellenicAI'],
+            url: 'https://workforce.hellenicai.com/',
+            logo: 'https://workforce.hellenicai.com/favicon.png',
             sameAs: [
-              'https://github.com/kortix-ai',
-              'https://x.com/kortix',
-              'https://linkedin.com/company/kortix',
+              'https://github.com/hellenictechnologies',
             ],
             description:
-              'Kortix (formerly known as Suna) is an open source generalist AI worker that helps you accomplish real-world tasks through natural conversation.',
+              'hellenicAI is an open source generalist AI worker that helps you accomplish real-world tasks through natural conversation.',
           }),
         }}
       />
@@ -88,13 +78,13 @@ export default function SunaPage() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://www.kortix.com',
+                item: 'https://workforce.hellenicai.com/',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
-                name: 'Suna is now Kortix',
-                item: 'https://www.kortix.com/suna',
+                name: 'hellenicAI',
+                item: 'https://workforce.hellenicai.com/suna',
               },
             ],
           }),
@@ -106,7 +96,7 @@ export default function SunaPage() {
           {/* Hero Section with Logo */}
           <div className="relative z-10 pt-16 sm:pt-24 md:pt-32 mx-auto h-full w-full max-w-6xl flex flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 pt-8 sm:pt-20 max-w-4xl mx-auto pb-10">
-              {/* Kortix Symbol with grain texture */}
+              {/* hellenicAI Symbol with grain texture */}
               <div className="relative mb-8 sm:mb-12" style={{ width: '80px', height: '80px' }}>
                 <Image
                   src="/ht-symbol.png"
