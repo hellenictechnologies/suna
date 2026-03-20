@@ -75,8 +75,8 @@ const AgentHeader = memo(function AgentHeader({ agentInfo }: { agentInfo: AgentI
   if (agentInfo.name === "Kortix") {
     return (
       <img
-        src="/kortix-logomark-white.svg"
-        alt="Kortix"
+        src="/hellenic-ai-computer.png"
+        alt="hellenicAI Computer"
         className="dark:invert-0 invert flex-shrink-0"
         style={{ height: '12px', width: 'auto' }}
       />
@@ -1818,8 +1818,8 @@ export const ThreadContent: React.FC<ThreadContentProps> = memo(
                       {/* Match ReasoningSection header layout for smooth transition */}
                       <div className="flex items-center gap-3">
                         <img
-                          src="/kortix-logomark-white.svg"
-                          alt="Kortix"
+                          src="/hellenic-ai-computer.png"
+                          alt="hellenicAI Computer"
                           className="dark:invert-0 invert flex-shrink-0 animate-pulse"
                           style={{ height: '14px', width: 'auto' }}
                         />

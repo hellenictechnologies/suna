@@ -332,8 +332,8 @@ export function ExampleShowcase() {
                       <div className="max-w-[90%] space-y-1">
                         <div className="flex items-center gap-1 mb-1">
                           <img
-                            src="/kortix-logomark-white.svg"
-                            alt="Kortix"
+                            src="/hellenic-ai-computer.png"
+                            alt="hellenicAI Computer"
                             className="dark:invert-0 invert flex-shrink-0"
                             style={{ height: '8px', width: 'auto' }}
                           />

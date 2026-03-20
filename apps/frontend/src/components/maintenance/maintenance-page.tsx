@@ -39,8 +39,8 @@ export function MaintenancePage() {
         <AnimatedBg variant="hero" />
 
         <div className="relative z-10 w-full max-w-[456px] flex flex-col items-center gap-8">
-          {/* Logo - 32px height */}
-          <KortixLogo size={32} />
+          {/* Logo */}
+          <KortixLogo />
 
           {/* Title - 43px */}
           <h1 className="text-[43px] font-normal tracking-tight textforeground leading-none">

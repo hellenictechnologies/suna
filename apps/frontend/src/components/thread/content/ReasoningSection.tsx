@@ -84,8 +84,8 @@ export function ReasoningSection({
       <div className="flex items-center gap-3">
         {/* Full Kortix logo (logomark with text) - pulses when reasoning is active */}
         <img
-          src="/kortix-logomark-white.svg"
-          alt="Kortix"
+          src="/hellenic-ai-computer.png"
+          alt="hellenicAI Computer"
           className={cn(
             "flex-shrink-0 dark:invert-0 invert",
             shouldShimmer && "animate-pulse"
