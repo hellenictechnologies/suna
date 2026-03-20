@@ -20,8 +20,8 @@
 #   docker compose logs -f        # View all logs
 #
 # Access:
-#   - Kortix Super Worker Frontend:     http://localhost:3000
-#   - Kortix Super Worker Backend API:  http://localhost:8000
+#   - Kortix Super Worker Frontend:     https://workforce.hellenicai.com
+#   - Kortix Super Worker Backend API:  https://backend.hellenicai.com/v1
 # ============================================================================
 
 services:
@@ -54,6 +54,7 @@ services:
       - REDIS_PORT=6379
       - REDIS_PASSWORD=
       - REDIS_SSL=False
+      - FRONTEND_URL_ENV=https://workforce.hellenicai.com
     # DNS configuration to reduce DNS lookup latency for third-party services
     # Using Google and Cloudflare DNS for reliability
     dns:
@@ -74,13 +75,21 @@ services:
       context: .
       dockerfile: apps/frontend/Dockerfile
       args:
-        NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL:-http://localhost:8000/v1}
-        NEXT_PUBLIC_URL: ${NEXT_PUBLIC_URL:-http://localhost:3000}
+        NEXT_PUBLIC_BACKEND_URL: ${NEXT_PUBLIC_BACKEND_URL:-https://backend.hellenicai.com/v1}
+        NEXT_PUBLIC_URL: ${NEXT_PUBLIC_URL:-https://workforce.hellenicai.com}
         NEXT_PUBLIC_ENV_MODE: ${NEXT_PUBLIC_ENV_MODE:-LOCAL}
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY}
         # Use relaxed lockfile mode for local dev; prod uses --frozen-lockfile by default
         PNPM_LOCKFILE_MODE: --no-frozen-lockfile
     ports:
       - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_BACKEND_URL=https://backend.hellenicai.com/v1
+      - BACKEND_URL=https://backend.hellenicai.com/v1
+      - NEXT_PUBLIC_URL=https://workforce.hellenicai.com
+      - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
+      - NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY}
     depends_on:
       - backend
 
