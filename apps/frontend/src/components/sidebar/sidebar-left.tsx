@@ -248,7 +248,7 @@ export function SidebarLeft({
       {...props}
     >
       <SidebarHeader className="pt-4 overflow-visible">
-        <div className="relative flex h-[32px] items-center">
+        <div className="relative flex h-[32px] items-center overflow-hidden">
           {/* Logo - fixed position, matches dashboard header on mobile */}
           <div className={cn(
             "absolute flex items-center justify-center group/logo",
